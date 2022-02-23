@@ -1,0 +1,28 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @manufacturer %>
+
+<!-- flex: [ https://getbootstrap.com/docs/4.0/utilities/flex/ ]
+<div class="d-inline-flex p-2"">
+  <div class="d-flex flex-row">
+    <div class="p-2">
+      <div class="p-1 border bg-light"><%= link_to "Edit this manufacturer", edit_manufacturer_path(@manufacturer), class: "btn btn-primary " %></div>
+    </div>
+    <div class="p-2">
+      <div class="p-1 border bg-light"><%= link_to "Back to manufacturers", manufacturers_path, class: "btn btn-primary" %></div>
+    </div>
+    <div class="p-2">
+      <div class="p-1 border bg-light"><%= button_to "Destroy this manufacturer", @manufacturer, method: :delete, class: "btn btn-secondary" %></div>
+    </div>
+  </div>
+</div>
+-->
+
+<div class="d-grid gap-2 d-md-block">
+  <%= link_to "Edit this manufacturer", edit_manufacturer_path(@manufacturer), class: "btn btn-primary " %>
+  <%= link_to "Back to manufacturers", manufacturers_path, class: "btn btn-primary" %>
+  <div class="pt-2">
+    <%= button_to "Destroy this manufacturer", @manufacturer, method: :delete, class: "btn btn-secondary" %>
+  </div>
+</div>
+
