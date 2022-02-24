@@ -14,8 +14,7 @@
     <div class="container">
       <header>
         <%= render partial: 'shared/navbar' %>
-        <p class="notice"><%= notice %></p>
-        <p class="alert"><%= alert %></p>
+        <%= render partial: 'shared/alerts' %>
       </header>
       <%= yield %>
       <footer class="pt-5">
